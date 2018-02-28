@@ -1,0 +1,38 @@
+.about-container {
+  background: linear-gradient(120deg, #03A678 50%, #fff 50%);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:100vh;
+  margin:0;
+}
+
+.about-container h1 {
+  margin:50px 0 0 80px;
+  color:#fff;
+  font-family: 'Caveat', cursive;
+  font-size:500%;
+}
+
+.about-container h2 {
+  margin:50px 0 10px 65px;
+  color:#fff;
+  font-family: 'Caveat', cursive;
+  font-size:400%;
+}
+
+.about-container p {
+  margin: 0 0 0 70px;
+  color:#fff;
+  font-size:150%;
+}
+
+.about-container a:hover {
+  text-decoration: none;
+  border-bottom:1px solid #eee;
+  color:#eee;
+  transition:color 0.2s;
+}
+
+.style-dark {
+  color:#03A678 !important;
+}

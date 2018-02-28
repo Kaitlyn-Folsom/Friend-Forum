@@ -1,7 +1,6 @@
 /* font-family: 'Dosis', sans-serif;
 font-family: 'Indie Flower', cursive;
 font-family: 'Alegreya Sans', sans-serif;
-font-family: 'Amatic SC', cursive;
 font-family: 'Caveat', cursive; */
 *{
 	padding:0;
@@ -36,6 +35,11 @@ body{
   clear: both;
 }
 
+.row {
+  width:100%;
+  margin:0;
+}
+
 /* ====================NAVBAR=====================*/
 
 .navbar{
@@ -45,28 +49,6 @@ body{
   /* 03A678 */
   color:#fff;
   border-radius:0;
-}
-
-#logo {
-  position:relative;
-  top: 0;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  background: #1F2421;
-  border-radius: 50%;
-  border: 1px;
-  border-color: white;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
-}
-
-#logo-txt{
-  color: #31708e;
-  font-size:60px;
-  text-align:center;
-  vertical-align:center;
 }
 
 #navbar-name{
@@ -160,9 +142,9 @@ border: 0px solid black;
 
 #feed-footer{
   background: b-wekit-linear-gradient(bottom right, #026670), rgba(255, 255, 255, 1));
-background: -o-linear-gradient(bottom right, #31708e, #8Fc1e3);
-background: -moz-linear-gradient(bottom right, #31708e, #8Fc1e3);
-background: linear-gradient(to bottom right, #31708e, #8Fc1e3)
+  background: -o-linear-gradient(bottom right, #31708e, #8Fc1e3);
+  background: -moz-linear-gradient(bottom right, #31708e, #8Fc1e3);
+  background: linear-gradient(to bottom right, #31708e, #8Fc1e3)
 }
 
 /* ===============INTEREST BUTTONS===================*/
@@ -340,9 +322,7 @@ footer {
   padding: 20px 0 0 0;
   width: 100%;
   clear: both;
-  font-size: 15px;
-  /* color: #fff; */
-  /* background-color:#598392; */
+  font-size: 90%;
   background-color:#eee;
   text-align: center;
   border: 0px solid black;
@@ -355,7 +335,7 @@ footer a {
 
 footer a:hover {
   text-decoration: none;
-  color:#ccc;
+  color:#03A678;
 }
 
 /*==========Button Animation==========*/
@@ -411,6 +391,3 @@ footer a:hover {
   25% {transform:scale(1.25); opacity:1;}
   50% {transform:scale(1.5); opacity:0;}
 }
-
-
-/* ============About Us Page ============*/

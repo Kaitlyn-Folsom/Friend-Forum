@@ -7,14 +7,14 @@
 }
 
 .login-container h1 {
-  margin:90px 0 0 100px;
+  margin:70px 0 0 90px;
   color:#fff;
   font-family: 'Caveat', cursive;
   font-size:450%;
 }
 
 .login-form {
-  margin:100px 60px 0 0 ;
+  margin:80px 60px 0 0 ;
   padding:0;
 }
 
@@ -48,19 +48,20 @@
 
 .login-form p {
   text-align:right;
-  margin: 5px 4px 5px 0;
+  margin: 5px 8px 5px 0;
   font-size:90%;
 }
 
 .login-form a:hover {
   text-decoration:none;
-  color:#3b3a30;
+  color:#03A678;
+  border-bottom:1px solid #03A678;
 }
 
  .about-list {
   color:#fff;
   font-size:230%;
-  margin: 50px 20%;
+  margin: 50px 17%;
  }
 
  .about-list i {
@@ -75,7 +76,23 @@
   border: 0;
   color: white;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  margin:10px;
+  margin:10px 20px;
+}
+
+.interest-row-1 {
+  margin-left:25%;
+}
+
+.interest-row-2 {
+  margin-left:15%;
+}
+
+.interest-row-3 {
+  margin-left:5%;
+}
+
+.interest-row-4 {
+  margin-left:-5%;
 }
 
 #interest1 {
