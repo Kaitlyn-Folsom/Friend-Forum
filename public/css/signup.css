@@ -1,0 +1,30 @@
+#select:invalid {
+  color: #C8C8C8;
+}
+
+#interest1-input,
+#interest3-input{
+  width: 49%;
+  padding: 6px;
+  margin-bottom: 5px;
+  border-color: #EAEAEA;
+  border-radius: 5px;
+}
+
+#interest2-input,
+#interest4-input{
+  float: right;
+  width: 49%;
+  padding: 6px;
+  margin-bottom: 5px;
+  border-color: #EAEAEA;
+  border-radius: 5px;
+}
+
+#location-input{
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 5px;
+  border-color: #EAEAEA;
+  border-radius: 5px;
+}

@@ -1,0 +1,162 @@
+<div class="wrapper">
+  <nav class="navbar navbar-default">
+      <div class="navbar-header" id="login-navbar-header">
+        <h1>Friend Forum</h1>
+      </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Sign Up</h2>
+        <form class="signup">
+          <div class="form-group">
+            <label for="exampleInputname">Name</label>
+            <input type="text" class="form-control" id="name-input" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputOccupation">Occupation</label>
+            <input type="text" class="form-control" id="occupation-input" placeholder="Occupation">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputLocation">Location</label>
+            <br>
+            <select data-placeholder="Location (US State)" class="selectpicker" id="location-input">
+            <option value="" disabled selected>Location (US State)</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Washington, DC">District Of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Lousisana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hamsphire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputInterest">Interests</label>
+            <br>
+            <select data-placeholder="Interest 1" class="selectpicker" id="interest1-input">
+            <option value="" disabled selected>Interest 1</option>
+            <option value="Business">Business</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Music">Music</option>
+            <option value="Politics">Politics</option>
+            <option value="Science and Nature">Science and Nature</option>
+            <option value="Sports">Sports</option>
+            <option value="Technology">Technology</option>
+            </select>
+            <select data-placeholder="Interest 2" class="selectpicker" id="interest2-input">
+            <option value="" disabled selected>Interest 2</option>
+            <option value="Business">Business</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Music">Music</option>
+            <option value="Politics">Politics</option>
+            <option value="Science and Nature">Science and Nature</option>
+            <option value="Sports">Sports</option>
+            <option value="Technology">Technology</option>
+            </select>
+            <br>
+            <select data-placeholder="Interest 3" class="selectpicker" id="interest3-input">
+            <option value="" disabled selected>Interest 3</option>
+            <option value="Business">Business</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Music">Music</option>
+            <option value="Politics">Politics</option>
+            <option value="Science and Nature">Science and Nature</option>
+            <option value="Sports">Sports</option>
+            <option value="Technology">Technology</option>            
+            </select>
+            <select data-placeholder="Interest 4" class="selectpicker" id="interest4-input">
+            <option value="" disabled selected>Interest 4</option>
+            <option value="Business">Business</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Music">Music</option>
+            <option value="Politics">Politics</option>
+            <option value="Science and Nature">Science and Nature</option>
+            <option value="Sports">Sports</option>
+            <option value="Technology">Technology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputImage">Profile Pic (url)</label>
+            <input type="text" class="form-control" id="image-input" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputBio">About You</label>
+            <textarea type="text" class="form-control" id="bio-input" placeholder="About You"></textarea>
+        </div>
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" href="/member">Sign Up</button>
+        </form>
+        <br />
+      </div> {{!-- End Col --}}
+      <div class="col-md-2">
+        <p>Or log in <a href="/login">here</a></p>
+      </div>
+    </div> {{!-- End Row --}}
+
+  </div> {{!-- End container --}}
+
+      
+    <div class="push"></div>
+</div> {{!-- End Wrapper --}}
+
+
+    <footer>
+        Friend Forum &copy; 2017
+        <a href="/about">About Us</a>
+    </footer>
+  
+  <script type="text/javascript" src="js/signup.js"></script>

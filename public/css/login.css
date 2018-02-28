@@ -1,0 +1,173 @@
+.login-container {
+  background: linear-gradient(120deg, #03A678 50%, #fff 50%);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:100vh;
+  margin:0;
+}
+
+.login-container h1 {
+  margin:90px 0 0 100px;
+  color:#fff;
+  font-family: 'Caveat', cursive;
+  font-size:450%;
+}
+
+.login-form {
+  margin:100px 60px 0 0 ;
+  padding:0;
+}
+
+.login-form input {
+  border: 1px solid #03A678;
+  width:130px;
+  height:40px;
+  margin:3px;
+}
+
+#login-btn {
+  height:40px;
+  border: 1px solid #03A678;
+  padding:5px 20px;
+  border-radius:5px;
+  background-color:#03A678;
+  color:#fff;
+  font-size:90%;
+}
+
+#login-btn:focus {
+  border-color:#03A678;
+}
+
+#login-btn:hover {
+  margin:0px;
+  background-color:#fff;
+  color:#03A678;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.login-form p {
+  text-align:right;
+  margin: 5px 4px 5px 0;
+  font-size:90%;
+}
+
+.login-form a:hover {
+  text-decoration:none;
+  color:#3b3a30;
+}
+
+ .about-list {
+  color:#fff;
+  font-size:230%;
+  margin: 50px 20%;
+ }
+
+ .about-list i {
+   margin-right:8px;
+ }
+
+ .login-interests button {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  margin:10px;
+}
+
+#interest1 {
+  background-image: url("../images/flag.gif");
+  background-size:cover;
+}
+
+#interest2 {
+  background-image: url("../images/emmys.gif");
+  background-size:cover;
+}
+
+#interest3 {
+  background-image: url("../images/musicturntable.gif");
+  background-position: center;
+  background-size:cover;
+  
+}
+
+#interest4 {
+  background-image: url("../images/entertainment.gif");
+  background-size:cover;
+  background-position: center;
+}
+
+#interest5 {
+  background-image: url("../images/football.gif");
+  background-size:cover;
+}
+
+#interest6 {
+  background-image: url("../images/gaming.gif");
+  background-size:cover;
+}
+
+#interest7 {
+  background-image: url("../images/matrix.gif");
+  background-size:cover;
+}
+
+#interest8 {
+  background-image: url("../images/stockmarket.gif");
+  background-size:cover;
+}
+
+.topics {
+  -webkit-transition:height .25s ease, width .25s ease;
+  transition:height .25s ease, width .25s ease; 
+  -webkit-transform:translate(0%,0%);
+  transform:translate(0%,0%);
+  transition:0.5s;
+  display:inline;
+}
+
+.topics:hover{
+  color: black;
+  transition:0.5s;
+}
+
+.topics:before,
+.topics:after {
+  content:'';
+  display:inline;
+  position:absolute;
+  top:0; right:0; bottom:0; left:0;
+  border-radius:50%;
+  border:1px solid #ccc;
+}
+
+.topics:before {
+  -webkit-animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
+}
+.topics:after {
+  -webkit-animation: ripple 2s linear 1s infinite;
+  animation: ripple 2s linear 1s infinite;
+}
+
+.topics:hover:before,
+.topics:hover:after {
+  -webkit-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes ripple{
+  0% {-webkit-transform:scale(1); }
+  75% {-webkit-transform:scale(1.75); opacity:1;}
+  100% {-webkit-transform:scale(2); opacity:0;}
+}
+
+@keyframes ripple{
+  0% {transform:scale(1); }
+  25% {transform:scale(1.25); opacity:1;}
+  50% {transform:scale(1.5); opacity:0;}
+}
