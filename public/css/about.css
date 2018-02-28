@@ -1,3 +1,4 @@
+
 .about-container {
   background: linear-gradient(120deg, #03A678 50%, #fff 50%);
   background-size:cover;
@@ -7,7 +8,7 @@
 }
 
 .about-container h1 {
-  margin:50px 0 0 80px;
+  margin:50px 0 0 100px;
   color:#fff;
   font-family: 'Caveat', cursive;
   font-size:500%;
@@ -29,10 +30,28 @@
 .about-container a:hover {
   text-decoration: none;
   border-bottom:1px solid #eee;
-  color:#eee;
-  transition:color 0.2s;
+  color:#fff;
 }
 
 .style-dark {
   color:#03A678 !important;
+}
+
+.style-dark a:hover {
+  color:#03A678 !important;
+  border-bottom:1px solid #03A678;
+}
+
+#return-btn {
+  border:0;
+  margin: 20px 0 0 20px;
+  background-color:#fff;
+  transition:color 0.2s;
+}
+
+#return-btn:hover {
+  border:0;
+  margin: 20px 0 0 20px;
+  color:#03A678;
+  background-color:#fff;
 }
