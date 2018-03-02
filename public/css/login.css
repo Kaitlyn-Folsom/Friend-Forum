@@ -1,5 +1,5 @@
 .login-container {
-  background: linear-gradient(120deg, #03A678 50%, #fff 50%);
+  background: linear-gradient(120deg, #098f69 50%, #fff 50%);
   background-size:cover;
   background-repeat: no-repeat;
   height:100vh;
@@ -19,7 +19,7 @@
 }
 
 .login-form input {
-  border: 1px solid #03A678;
+  border: 1px solid #098f69;
   width:130px;
   height:40px;
   margin:3px;
@@ -27,22 +27,22 @@
 
 #login-btn {
   height:40px;
-  border: 1px solid #03A678;
+  border: 1px solid #098f69;
   padding:5px 20px;
   border-radius:5px;
-  background-color:#03A678;
+  background-color:#098f69;
   color:#fff;
   font-size:90%;
 }
 
 #login-btn:focus {
-  border-color:#03A678;
+  border-color:#098f69;
 }
 
 #login-btn:hover {
   margin:0px;
   background-color:#fff;
-  color:#03A678;
+  color:#098f69;
   transition: color 0.2s, background-color 0.2s;
 }
 
@@ -54,8 +54,8 @@
 
 .login-form a:hover {
   text-decoration:none;
-  color:#03A678;
-  border-bottom:1px solid #03A678;
+  color:#098f69;
+  border-bottom:1px solid #098f69;
 }
 
  .about-list {
