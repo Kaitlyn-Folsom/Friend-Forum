@@ -1,21 +1,18 @@
 <div class="wrapper">
 
   <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        {{!-- <img alt="Brand" src="..."> --}}
-        Friend Forum
-      </a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          Friend Forum
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="/members"><span class="member-name" id="navbar-name"></span></a></li>
+        <li class="active"><a href="/logout" id="logout-btn">Logout</a></li>
+      </ul>     
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="/members"><span class="member-name" id="navbar-name"></span></a></li>
-      <li class="active"><a href="/logout" id="logout-btn">Logout</a></li>
-     </ul>     
-  </div>
-</nav>
-
-  <!-- ========== START PROFILE BODY ============= -->
+  </nav>
 
 <div class="row profile-body">
   <div class="col-lg-6 col-md-6 col-sm-6">
@@ -39,24 +36,22 @@
   </div>
 
   <div class="col-lg-5 col-md-5 col-sm-5">
-    <div class="panel panel-default" id="feed-container">
-      <div class="panel-heading" id="feed-heading">
-        <h6>My Feed</h6>
+    <div class="panel" id="feed-container">
+      <div class="feed-heading">
+        <h5>My Feed</h5>
       </div>
-        <div class="panel-body" id="feed">
-          <div id="post-area">
-          </div>
-        </div>
-      <div class="panel-footer feed-footer">
-        <div class="input-group">
-          <input type="text" name="post-field" class="form-control" id="post-field">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button" id="post-submit">POST</button>
-          </span>
-        </div>
+      <div class="panel-body feed">
+        <div id="post-area"></div>
       </div>
-  </div> <!-- End col -->
-</div> <!-- End Row -->
+      <div class="feed-footer">
+        <form action="" id="feedForm">
+          <input type="text" id="post-field" name="post-field" autocomplete="off" />
+          <button class="btn" id="post-submit">Post</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="row interest-row">
   <div class="col-md-3 interests">
@@ -73,65 +68,62 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-lg-7">
-    
-    <div class="panel panel-default" id="toggle-panel">
-      <div class="panel-heading" id="top-headlines">
+<div class="row" id="toggle-panel">
+  <div class="col-lg-7 headlines-section">    
+    <div id="top-headlines"></div>
+      <div id="articleDropdown">
+        <div id="articleOne" class="well headline-well"></div>
+          <div class="line-break"></div>
+        <div id="articleTwo" class="well headline-well"></div>
+          <div class="line-break"></div>
+        <div id="articleThree" class="well headline-well"></div> 
       </div>
-      <div class="panel-body" id="articleDropdown">
-        <div id="articleOne" class="well"></div>
-        <div id="articleTwo" class="well"></div>
-        <div id="articleThree" class="well"></div> 
-      </div>
-    </div>
   </div> 
 
-  <div class="col-lg-5">
-    <div class="row">
-      <div class="col-lg-11" id="linkBoxContainer">
-
-        <div class="panel panel-default" id="linkBox">
-          <div class="panel-heading">
-            <h3 id="link-header">Recently Shared</h3>
-          </div>
-            <div class="panel-body" id="link-repoPanel">
-              <div class="well" id="link-repo">
-              </div>
-            </div>
-          <div class="panel-footer" id="linkSearchPanel">
-            <form action="" id="linkForm">
-              <input id="link-repo-searchbar" autocomplete="off" placeholder="search"/>
-              <button class="btn btn-default" id="searchMsgBtn">Search</button>
-            </form>
-          </div>
-        </div>
-      </div> <!-- End col -->
-    </div> <!-- End Row -->
-
-    <div class="row">
-      <div class="col-lg-11" id="chatBox">
-        <ul id="messages"></ul>
-          <form action="" id="chatForm">
-            <input id="sendMessage" autocomplete="off"/>
-            <button class="btn btn-default" id="sendButton">Send</button>
-          </form>
+  <div class="col-lg-5">  
+    <div class="panel" id="linkBox">
+      <div id="link-header">
+        <h5>Recently Shared</h5>
+      </div>
+      <div id="link-repoPanel">
+        <div class="well" id="link-repo"></div>
+      </div>
+      <div class="link-chat-footer" id="linkSearchPanel">
+        <form action="" id="linkForm">
+          <input id="link-repo-searchbar" autocomplete="off" placeholder="Search recently shared links"/>
+          <button class="btn" id="searchMsgBtn">Search</button>
+        </form>
       </div>
     </div>
 
-  </div> <!-- End col -->
-</div> <!-- End Row -->
+    <div class="panel" id="chatBox">
+      <div id="chat-header">
+        <h5>Chat</h5>
+      </div>
+      <div id="link-repoPanel">
+        <div class="well" id="chat-repo">
+          <ul id="messages"></ul>
+        </div>
+      </div>
+      <div class="link-chat-footer">
+        <form action="" id="chatForm">
+          <input id="sendMessage" autocomplete="off" placeholder="Send"/>
+          <button class="btn" id="sendButton">Send</button>
+        </form>
+      </div>
+    </div>
 
-</div> <!-- End Row -->
+  </div>
+</div> 
 
  <div class="push"></div>
 
 </div> <!-- End Wrapper -->
 
-    <footer>
-        Friend Forum &copy; 2017
-        <a href="/about">About Us</a>
-    </footer>
+<footer class="footer">
+    Friend Forum &copy; 2017
+    <a href="/about">About Us</a>
+</footer>
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">

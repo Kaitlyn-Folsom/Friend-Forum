@@ -1,7 +1,7 @@
-/* font-family: 'Dosis', sans-serif;
-font-family: 'Indie Flower', cursive;
+/*
 font-family: 'Alegreya Sans', sans-serif;
-font-family: 'Caveat', cursive; */
+font-family: 'Caveat', cursive; 
+*/
 *{
 	padding:0;
 	box-sizing:border-box;
@@ -12,20 +12,17 @@ font-family: 'Caveat', cursive; */
 	outline:none;
 }
 
-html {
-	color: #555;
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size:20px;
+  color: #555;
 	text-rendering: optimizeLegibility;
 }
 
-body{
-	font-size:20px;
-  margin:0;
-}
-
 .wrapper {
-  height: auto !important;
-  height: 100%;
   min-height: 100%;
+  margin-bottom: -50px;
 }
 
 .container {
@@ -46,8 +43,15 @@ body{
   border: 0px solid black;
 }
 
-.form-control:focus {
-  
+.line-break {
+  background-color: #098f69;
+  width: 150px;
+  height:2px;
+  margin:15px 40%;
+}
+
+.well {
+  box-shadow:none;
 }
 
 /* ====================NAVBAR=====================*/
@@ -113,28 +117,32 @@ body{
   margin-top:10px;
 }
 
-/* =================FEED AREA==================*/
+/* ===========FEED AREA=============*/
 #feed-container{
+  border: none;
   border: 1px solid #098f69;
 }
 
-#feed {
+.feed {
   min-height: 265px;
   overflow: scroll;
   padding:0px;
+  border: 1px solid #098f69;
 }
 
-#feed-heading{
+.feed-heading{
   background-color: #098f69 !important; 
   color: #fff !important;
   text-align:center;
+  padding:5px;
 }
 
-#feed-heading h6{
+.feed-heading h5{
   color: white !important;
   font-family: 'Caveat', cursive;
-  font-size: 250%;
+  font-size: 300%;
 }
+
 
 .post{
   color: black;
@@ -146,12 +154,52 @@ body{
   padding: 5px 0px 2px 10px;
 }
 
-.feed-footer{
+/* #feedBox{
+  font: 13px;
+  padding: 0px;
+  height: auto;
+  margin: 0 0 30px 0;
+  background-color: #098f69;
+  border:1px solid #098f69;
+  width:90%;
+} */
+
+.feed-footer {
   padding:0;
-  border-top: 1px solid #098f69;
+  border-top: 2px solid #098f69
 }
 
-/* ============INTEREST BUTTONS==============*/
+#feedForm input { 
+  border: 0; 
+  padding: 10px; 
+  width: 84%;
+}
+
+#feedForm button { 
+  width: 15%; 
+  padding: 10px; 
+  display:inline;
+  border-radius:0px;
+}
+
+/* #feedForm input { 
+  border: 0; 
+  padding: 10px; 
+  width: 84%;
+}
+
+#feedForm button { 
+  width: 15%; 
+  padding: 10px; 
+  display:inline;
+  border-radius:0px;
+} */
+
+#post-submit:hover {
+  color:#fff;
+}
+
+/* =======INTEREST BUTTONS=======*/
 .interest-row {
   width:100%;
   margin:0;
@@ -159,8 +207,9 @@ body{
 
 .interests {
   text-align:center;
-  margin: 40px auto;
+  margin: 20px auto 50px auto;
 }
+
 .interests button {
   width: 150px;
   height: 150px;
@@ -185,118 +234,159 @@ body{
 /* ========HIDE/SHOW PANEL ========*/
 
 #toggle-panel {
-  padding: 20px;
   display: none;
-  float:left;
-  margin-bottom: 2%;
-  background-color:#9bb3c6 !important;
-  position:relative;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
-    border: 0px solid black;
+  margin: 10px auto 50px auto;
+  border:none
 }
 
-#top-headlines{
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
-    border: 0px solid black;
-    text-align:center;
+.headlines-section {
+  padding: 0 4%;
 }
 
-/*======= CHATBOX ======*/
+#headlines-panel {
+  padding: 0px;
+  border: 0px solid black;
+}
 
+#top-headlines h1{
+  text-align:center;
+  color:#098f69 !important;
+  font-family: 'Caveat', cursive !important;
+  font-size:480%;
+}
+
+.headline-well {
+  border:none;
+  background-color: #fff;
+  padding:10px;
+  font-size:120%;
+}
+
+.headline-well h3 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size:180%;
+  font-weight:bold;
+}
+
+.headline-well a:hover {
+  text-decoration: none;
+}
+
+.headline-well a h3:hover {
+  color:#098f69;
+  transition: color 0.1s;
+}
+
+.headline-well h5 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size:120%;
+}
+
+/* ======== PANELS ========== */
+
+
+
+/*======= Link BOX ======*/
 
 #linkBox{
   font: 13px;
-  font-family: Helvetica, Arial;
-  padding: 10px;
-  height: 300px;
-
-  max-height: 300px;
+  padding: 0px;
+  height: auto;
   display: none;
-  margin: 0 0 30px 0;
-  background-color: #9bb3c6;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
-  border: 0px solid black;
-    width:100%;
-}
-
-#linkSearchPanel{
-  bottom: 0;
-}
-
-#linkBoxContainer{
-  padding:0;
+  margin: 20px 0 30px 0;
+  background-color: #098f69;
+  border:1px solid #098f69;
+  width:90%;
 }
 
 #link-repo{
   font: 13px;
-  font-family: Helvetica, Arial;
-  padding: 10px;
-  margin: 0 0 10px 0;
-  max-height: 135px;
-  min-height:130px;
+  padding: 3px;
+  margin: 0 0 0px 0;
+  max-height: 180px;
+  min-height:180px;
   overflow-y: scroll;
+  border-radius:0px;
 }
 
 #link-repoPanel{
-  padding: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
-#link-header{
+#link-header h5{
   text-align:center;  
+  color:#fff;
+  font-family: 'Caveat', cursive; 
+  font-size:200%;
 }
 
-#linkForm{
+.link-chat-footer {
+  padding:0;
+  border-top: 1px solid #098f69
 }
 
 #linkForm input { 
   border: 0; 
   padding: 10px; 
-  width: 80%;
+  width: 84%;
 }
 
-#linkForm form button { 
-  width: 40px; 
+#linkForm button { 
+  width: 15%; 
   padding: 10px; 
-  display:inline-block;
+  display:inline;
+  border-radius:0px;
 }
 
-#chatBox {
- font: 13px;
- font-family: Helvetica, Arial;
- background: white;
- padding: 10px;
- height: 300px;
- max-height: 290px;
- display: none;
- margin: 0;
-border-radius:5px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+/*======= Chat BOX ======*/
+
+#chatBox{
+  font: 13px;
+  padding: 0px;
+  height: auto;
+  display: none;
+  margin: 0 0 30px 0;
+  background-color: #098f69;
+  border:1px solid #098f69;
+  width:90%;
 }
 
-#chatBox form {
-  position: absolute;
-  bottom: 0;
-  left:0;
-  width: 100%;
+#chat-repo{
+  font: 13px;
+  padding: 0px;
+  margin: 0;
+  max-height: 180px;
+  min-height:180px;
+  overflow-y: scroll;
+  border-radius:0px;
 }
 
-#chatBox form input { 
+#chat-repoPanel{
+  padding: 0px 0px 0px 0px;
+}
+
+#chat-header h5{
+  text-align:center;  
+  color:#fff;
+  font-family: 'Caveat', cursive; 
+  font-size:200%;
+}
+
+#chatForm input { 
   border: 0; 
   padding: 10px; 
-  width: 89%;
-  border-top:solid 1px #ccc;
+  width: 84%;
 }
 
-#chatBox form button { 
-  width: 10%; 
-  padding: 12px; 
+#chatForm button { 
+  width: 15%; 
+  padding: 10px; 
+  display:inline;
+  border-radius:0px;
 }
 
 #messages { 
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: 85%; 
   overflow-y: scroll;
 }
 
@@ -309,31 +399,26 @@ border-radius:5px;
 }
 
 /*======= FOOTER ========*/
-footer,
+
+.footer,
 .push {
-  height: 60px;
+  height: 50px;
 }
 
-footer {
-  height:50px;
-  position:fixed;
-  left:0;
-  bottom:0;
-  padding: 20px 0 0 0;
-  width: 100%;
-  clear: both;
+.footer {
+  padding: 15px 0 0 0;
   font-size: 90%;
   background-color:#eee;
   text-align: center;
   border: 0px solid black;
 }
 
-footer a {
+.footer a {
   float:right;
   padding-right:50px;
 }
 
-footer a:hover {
+.footer a:hover {
   text-decoration: none;
   color:#098f69;
 }
@@ -350,7 +435,7 @@ footer a:hover {
 }
 
 .flip:hover{
-  background-color: #8Fc1e3;
+  background-color: #098f69;
   color: black;
   transition:0.5s;
 }
@@ -362,7 +447,7 @@ footer a:hover {
   position:absolute;
   top:0; right:0; bottom:0; left:0;
   border-radius:50%;
-  border:1px solid #8Fc1e3;
+  border:1px solid #098f69;
 }
 
 .flip:before {

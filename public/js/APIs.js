@@ -35,7 +35,7 @@ $.ajax({
     	articleOneTitle.append(result.articles[0].title);
 		$("#articleOne").append(articleOneTitle);
 		var articleOneAuthor = $("<h5>");
-		articleOneAuthor.append(result.articles[0].author)
+		articleOneAuthor.append("by " + result.articles[0].author)
 		$("#articleOne").append(articleOneAuthor);
 		$("#articleOne").append(result.articles[0].description);
 
@@ -43,7 +43,7 @@ $.ajax({
     	articleTwoTitle.append(result.articles[1].title);
 		$("#articleTwo").append(articleTwoTitle);
 		var articleTwoAuthor = $("<h5>");
-		articleTwoAuthor.append(result.articles[1].author)
+		articleTwoAuthor.append("by " + result.articles[1].author)
 		$("#articleTwo").append(articleTwoAuthor);
 		$("#articleTwo").append(result.articles[1].description);
 
@@ -51,7 +51,7 @@ $.ajax({
     	articleThreeTitle.append(result.articles[2].title);
 		$("#articleThree").append(articleThreeTitle);
 		var articleThreeAuthor = $("<h5>");
-		articleThreeAuthor.append(result.articles[2].author)
+		articleThreeAuthor.append("by " + result.articles[2].author)
 		$("#articleThree").append(articleThreeAuthor);
 		$("#articleThree").append(result.articles[2].description);
 
