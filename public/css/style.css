@@ -46,6 +46,10 @@ body{
   border: 0px solid black;
 }
 
+.form-control:focus {
+  
+}
+
 /* ====================NAVBAR=====================*/
 
 .navbar{
@@ -53,6 +57,10 @@ body{
   border: 0px solid black;
   background-color: #098f69;
   border-radius:0;
+}
+
+.navbar-nav {
+  margin-right: 20px;
 }
 
 .navbar li.active:hover{
@@ -76,6 +84,7 @@ body{
   color: #fff;
   font-size:140%;
 }
+
 
 /* =========== User info section ============*/
 .profile-body {
