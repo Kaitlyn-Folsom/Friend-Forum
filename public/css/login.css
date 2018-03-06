@@ -29,7 +29,7 @@
   height:40px;
   border: 1px solid #098f69;
   padding:5px 20px;
-  border-radius:5px;
+  border-radius:8px;
   background-color:#098f69;
   color:#fff;
   font-size:90%;
@@ -68,6 +68,33 @@
    margin-right:8px;
  }
 
+ .learn-btn {
+   background-color:#098f69;
+   color:#fff;
+   border-radius:8px;
+   border:1px solid #fff;
+   width:30%;
+   height:40px;
+  
+ }
+
+ .learn-btn a:hover {
+  text-decoration:none;
+  color:#fff;
+}
+
+ .learn-btn:hover {
+  background-color:#098f69;
+  color:#FDFE54;
+  border:1px solid #FDFE54;
+  text-decoration:none;
+  transition:background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.learn-btn i {
+  padding-left:5px;
+}
+
  .login-interests button {
   width: 120px;
   height: 120px;
@@ -76,7 +103,12 @@
   border: 0;
   color: white;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  margin:10px 20px;
+  margin:15px 20px;
+  text-shadow: 1px 1px #000;
+}
+
+.login-interests button:hover {
+  color: white;
 }
 
 .interest-row-1 {
@@ -95,9 +127,10 @@
   margin-left:-5%;
 }
 
-#interest1 {
+#politics {
   background-image: url("../images/flag.gif");
   background-size:cover;
+  text-shadow: 1px 1px #000;
 }
 
 #interest2 {
@@ -113,7 +146,7 @@
 }
 
 #interest4 {
-  background-image: url("../images/entertainment.gif");
+  background-image: url("../images/patternal.gif");
   background-size:cover;
   background-position: center;
 }

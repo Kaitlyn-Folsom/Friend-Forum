@@ -1,6 +1,5 @@
-
-  
-  <nav class="navbar navbar-default">
+ 
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">
@@ -9,35 +8,34 @@
     </div>
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="/about" id="about-btn" >About</a></li>
-     </ul>     
+      </ul>     
   </div>
 </nav>
 
 <div class="wrapper">
 
   <div class="container signup-container">
-    <div class="row">
-      <div class="col-md-5 info-section">
-        <h1>Friend Forum</h1>
+    <div class="col-md-5 info-section">
+      <h1>Friend Forum</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt augue interdum velit euismod in. Cras sed felis eget velit aliquet sagittis id consectetur. Nunc aliquet bibendum enim facilisis gravida neque convallis.</p> 
         <p>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Integer enim neque volutpat ac. Ut faucibus pulvinar elementum integer enim neque volutpat. Sed felis eget velit aliquet sagittis. Volutpat sed cras ornare arcu dui vivamus. Nibh tellus molestie nunc non blandit massa.</p>
-      </div>
-      <div class="col-md-5 col-md-offset-1">
-        <h1>Sign Up</h1>
-        <div class="row">
-          <div class="signup">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="exampleInputname">Full Name</label>
-                <input type="text" class="form-control" id="name-input" placeholder="Name">
-              </div>
+    </div>
+    <div class="col-md-5 col-md-offset-1">
+      <h1>Sign Up</h1>
+      <div class="row">
+        <form class="signup">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="exampleInputname">Full Name</label>
+              <input type="text" class="form-control" id="name-input" placeholder="Name">
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="email-input" placeholder="Email">
-              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="email-input" placeholder="Email">
             </div>
+          </div>
           <div class="col-md-6">
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
@@ -171,40 +169,37 @@
               </select>
             </div>
           </div>              
-        <div class="col-md-12">
-          <div class="form-group">
-            <label for="exampleInputImage">Profile Pic (url)</label>
-            <input type="text" class="form-control" id="image-input" placeholder="">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="exampleInputImage">Profile Pic (url)</label>
+              <input type="text" class="form-control" id="image-input" placeholder="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-12">
-          <div class="form-group">
-            <label for="exampleInputBio">About You</label>
-            <textarea type="text" class="form-control" id="bio-input" placeholder="Tell the forum a little about yourself"></textarea>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="exampleInputBio">About You</label>
+              <textarea type="text" class="form-control" id="bio-input" placeholder="Tell the forum a little about yourself"></textarea>
+            </div>
           </div>
-        </div>
-        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-          <span class="sr-only">Error:</span> <span class="msg"></span>
-        </div>
-        <div class="col-md-12">
-          <button type="submit" class="btn btn-primary" href="/member">Sign Up</button>
-        </div>
-
-      </form>
-    </div>
-        
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary" href="/member">Sign Up</button>
+          </div>
+        </form>
       </div>
     </div> {{!-- End Col --}}
-    <div class="col-md-1">
+
+    <div class="col-md-1 login-col">
       <p>Or log in <a href="/login">here</a></p>
     </div>
-  </div> {{!-- End Row --}}
 
-</div> {{!-- End container --}}
-
-      
+  </div> {{!-- End container --}}
+    
   <div class="push"></div>
+
 </div> {{!-- End Wrapper --}}
 
 <footer class="footer">
@@ -212,4 +207,4 @@
     <a href="/about">About Us</a>
 </footer>
 
-  <script type="text/javascript" src="js/signup.js"></script>
+<script type="text/javascript" src="js/signup.js"></script>

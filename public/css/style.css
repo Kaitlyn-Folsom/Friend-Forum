@@ -41,6 +41,7 @@ html, body {
   background-color: #098f69;
   color:#fff;
   border: 0px solid black;
+  
 }
 
 .line-break {
@@ -74,7 +75,7 @@ html, body {
 .navbar-brand {
   font-family: 'Caveat', cursive;
   font-size:170%;
-  color:#F7CA18 !important;
+  color:#FDFE54 !important;
   text-shadow:1px 1px rgb(31, 31, 31);
   padding-left:60px;
 }

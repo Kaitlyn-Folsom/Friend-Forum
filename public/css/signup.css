@@ -22,3 +22,7 @@
 #select:invalid {
   color: #C8C8C8;
 }
+
+.login-col {
+  padding-left:0;
+}

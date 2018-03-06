@@ -42,16 +42,33 @@
   border-bottom:1px solid #098f69;
 }
 
-#return-btn {
+/* #return-btn:hover {
   border:0;
-  margin: 20px 0 0 20px;
-  background-color:#fff;
-  transition:color 0.2s;
-}
-
-#return-btn:hover {
-  border:0;
-  margin: 20px 0 0 20px;
   color:#098f69;
   background-color:#fff;
+} */
+
+.return-btn {
+  background-color:#fff;
+  color:#098f69;
+  margin: 20px 0 0 20px;
+  border-radius:8px;
+  border:1px solid #fff;
+}
+
+.return-btn:hover {
+  background-color:#098f69;
+  color:#fff;
+  text-decoration:none;
+  transition:background-color 0.2s, color 0.2s, border 0.2s;
+  margin: 20px 0 0 20px;
+ }
+
+.return-btn a:hover {
+ text-decoration:none;
+ color:#fff;
+}
+
+.return-btn i {
+ padding-right:3px;
 }
