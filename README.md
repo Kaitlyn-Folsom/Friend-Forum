@@ -32,9 +32,9 @@ Socket.Io was the main node package used in this website. A separate table was m
 ![Sign up](public/images/signup-page.png)
 
 ### Profile & Feed
-![Profile]()
+![Profile](public/images/profile.png)
 ### Chat and news links
-![Links and Chat]()
+![Links and Chat](public/images/headlines-chat.png)
 
 ## Languages/Resources Used
 - HTML/CSS

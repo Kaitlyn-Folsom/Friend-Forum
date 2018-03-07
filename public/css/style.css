@@ -125,7 +125,8 @@ html, body {
 }
 
 .feed {
-  min-height: 265px;
+  min-height: 260px;
+  max-height: 260px;
   overflow: scroll;
   padding:0px;
   border: 1px solid #098f69;
