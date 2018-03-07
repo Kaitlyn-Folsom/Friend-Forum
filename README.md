@@ -6,38 +6,44 @@ In this application, the user is able to login, make a profile, and chat about e
 
 Socket.Io was the main node package used in this website. A separate table was made for each of the different chats to keep them each separate.
 
+## Utilizing the App
+
+* View the app: [Friend Forum](https://friend-forum.herokuapp.com)
+
+* Sign up and create a profile.
+* Choose 4 of our 8 predefined topics that interest you.
+* When viewing your profile, select a topic and browse the current headlines.
+* Chat and debate through our live chat feature specific to each topic.
+* Or send out a mesage in our global feed for all users to see.
+* Search for previously shared links.
+
 ## Future Developments 
 
-In the future, it would be interesting to have a single table to hold all chats and simply add a new column to contain the new text, author, and category name. Additionally, we'd like to implement a more robust user search feature.
-<!-- 
-## App Link
+* User search feature
+* New topics to choose from
+* Be able to change user information
 
-[Heroku App Link](https://friend-forum.herokuapp.com)
-	
-## Demos
+## Illustating the App
 
-### Signup:
-![signupdemo](assets/demos/signupDemo.gif)
+### Home Page
+![Home Page](public/images/home-page.png)
 
-### Login:
-![logindemo](assets/demos/loginDemo.gif)
+### Signup & info
+![Sign up](public/images/signup-page.png)
 
-### Forums:
-![searchdemo](assets/demos/forumsDemo.gif)
-
-### Chatroom and Link Pinning:
-![fullsearchdemo](assets/demos/chatroomlinkDemo.gif) -->
-
-<!-- Note: With Heroku's hosting, chat had to be demonstrated through two separate devices with unique IP addresses. As such, only one user's window is featured in this demo GIF. -->
+### Profile & Feed
+![Profile]()
+### Chat and news links
+![Links and Chat]()
 
 ## Languages/Resources Used
-- HTML
-- JavaScript
-- CSS
+- HTML/CSS
+- JavaScript/JQuery
 - Bootstrap
 - Handlebars
 - MySQL
 - Sequelize
+- Express
 - Socket.IO
 - Passport
 - Moment
@@ -47,5 +53,5 @@ In the future, it would be interesting to have a single table to hold all chats 
 
 * [**Andrew Apicello**](https://github.com/andrew-apicello/) - *JavaScript, AJAX Requests, APIs, Boostrap, CSS*
 * [**Benjamin Danis**](https://github.com/benjaminDanis) - *JavaScript, Socket.IO, Moment*
-* [**Kaitlyn Folsom**](https://github.com/https://github.com/Jewel0106) - *JavaScript, Passport, MySQL, Sequelize, Bootstrap, CSS*
+* [**Kaitlyn Folsom**](https://github.com/https://github.com/Jewel0106) - *UI/UX Design, JavaScript, Passport, MySQL, Sequelize, Bootstrap, CSS*
 * [**Alexander Paulino**](https://github.com/alexanderpaulino) - *JavaScript, Socket.IO, MySQL, Sequelize, CSS*
