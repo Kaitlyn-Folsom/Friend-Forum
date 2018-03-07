@@ -8,7 +8,7 @@ Socket.Io was the main node package used in this website. A separate table was m
 
 ## Utilizing the App
 
-* View the app: [Friend Forum](https://friend-forum.herokuapp.com)
+* View the app: [Friend Forum](https://quiet-temple-92644.herokuapp.com/)
 
 * Sign up and create a profile.
 * Choose 4 of our 8 predefined topics that interest you.
