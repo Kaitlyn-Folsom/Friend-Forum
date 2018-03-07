@@ -26,10 +26,10 @@ Socket.Io was the main node package used in this website. A separate table was m
 ## Illustating the App
 
 ### Home Page
-![Home Page](public/images/home-page.png)
+![Home Page](public/Images/home-page.png)
 
 ### Signup & info
-![Sign up](public/images/signup-page.png)
+![Sign up](public/Images/signup-page.png)
 
 ### Profile & Feed
 ![Profile](public/images/profile.png)
