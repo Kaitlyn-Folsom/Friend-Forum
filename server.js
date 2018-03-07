@@ -7,7 +7,19 @@ var cookieParser = require('cookie-parser');
 var passport = require("./config/passport");
 
 //Requiring MySQLSTORE to store our chat session and data
-MySQLStore = require('connect-mysql')(session),
+// MySQLStore = require('connect-mysql')(session),
+//     options = {
+//       config: {
+//         user: 'root', 
+//         password: "password", 
+//         database: 'social_media_testDB' 
+//       }
+//     };
+
+if(process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  MySQLStore = require('connect-mysql')(session),
     options = {
       config: {
         user: 'root', 
@@ -15,6 +27,7 @@ MySQLStore = require('connect-mysql')(session),
         database: 'social_media_testDB' 
       }
     };
+}
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
