@@ -19,13 +19,12 @@
     // "database": "database_production",
     // "host": "127.0.0.1",
     // "dialect": "mysql"
-    "username": "q8eehryqvqpicbsz",
-    "password": "x31k93q8sjojmd55",
-    "database": "brhuf5t1q0s80sgt",
-    "host": "gp96xszpzlqupw4k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql"
-
-    // "use_env_variable": "JAWSDB_URL",
+    // "username": "q8eehryqvqpicbsz",
+    // "password": "x31k93q8sjojmd55",
+    // "database": "brhuf5t1q0s80sgt",
+    // "host": "gp96xszpzlqupw4k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     // "dialect": "mysql"
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }
