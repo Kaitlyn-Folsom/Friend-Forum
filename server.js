@@ -16,28 +16,28 @@ var passport = require("./config/passport");
 //       }
 //     };
 
-    MySQLStore = require('connect-mysql')(session),
+    // MySQLStore = require('connect-mysql')(session),
+    // options = {
+    //   config: {
+    //     user: 'q8eehryqvqpicbsz', 
+    //     password: 'x31k93q8sjojmd55', 
+    //     database: 'brhuf5t1q0s80sgt',
+    //     host: "gp96xszpzlqupw4k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"  
+    //   }
+    // };
+
+if(process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  MySQLStore = require('connect-mysql')(session),
     options = {
       config: {
-        user: 'q8eehryqvqpicbsz', 
-        password: 'x31k93q8sjojmd55', 
-        database: 'brhuf5t1q0s80sgt',
-        host: "gp96xszpzlqupw4k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"  
+        user: 'root', 
+        password: "password", 
+        database: 'social_media_testDB' 
       }
     };
-
-// if(process.env.JAWSDB_URL) {
-//   connection = mysql.createConnection(process.env.JAWSDB_URL);
-// } else {
-//   MySQLStore = require('connect-mysql')(session),
-//     options = {
-//       config: {
-//         user: 'root', 
-//         password: "password", 
-//         database: 'social_media_testDB' 
-//       }
-//     };
-// }
+}
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
