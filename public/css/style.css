@@ -40,8 +40,12 @@ html, body {
 .btn {
   background-color: #098f69;
   color:#fff;
-  border: 0px solid black;
-  
+  /* border: 0px solid black; */
+}
+
+.btn:hover {
+  background-color: #098f69;
+  color:#FDFE54;
 }
 
 .line-break {
@@ -455,4 +459,20 @@ html, body {
   0% {transform:scale(1); }
   25% {transform:scale(1.25); opacity:1;}
   50% {transform:scale(1.5); opacity:0;}
+}
+
+.modal-body {
+  min-height:300px;
+  text-align:center;
+}
+
+.w3-dropdown-hover {
+  background-color:#087f5d !important;
+  color:#FDFE54 !important;
+}
+
+.w3-dropdown-content a:hover {
+  background-color:#098f69 !important;
+  text-decoration:none;
+  color:#FDFE54 !important;
 }
